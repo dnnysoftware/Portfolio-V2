@@ -1,0 +1,69 @@
+
+/* Styles of navigational items */
+
+.my-nav {
+    background-color: #82AC85;
+}
+
+.myCustomNavLink {
+    color: #fff;
+    text-decoration: none;
+    margin: .5em;
+}
+
+.myCustomNavLink:hover {
+    color: #d1aca5;
+    transition: 0.4s;
+}
+
+.num {
+    color: #d1aca5;
+}
+
+.nav-click.active {
+    box-sizing: border-box;
+    padding: .4em;
+    border-color: white;
+    border-width: .4em;
+    text-align: center;
+    color: white;
+    border-style: dotted;
+}
+
+/* Spaces navigational components */
+
+.ml-auto {
+    margin-left: auto !important;
+    text-decoration: none;
+}
+
+.nav-spacing {
+    margin: 0 20px;
+}
+
+/* Aligns nav items center */
+
+.navLink {
+    margin: 1em;
+    text-decoration: none;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; 
+}
+
+
+/* Scroll behavior making the navigation disappear */
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0; 
+    height: 100px;
+    transition: top 0.3s ease, height 0.3s ease; 
+  }
+  
+.hidden {
+top: -100px; 
+height: 0;
+}
+

@@ -1,0 +1,27 @@
+
+
+.projects-container {
+    background-color: white;
+    height: 70vh;
+    border-radius: 25px;
+}
+
+.gps-proj {
+    height: 100vh;
+}
+
+.projects-title {
+    padding: 4% 0;
+}
+
+.sub {
+    margin-top: 15vh;
+}
+
+.video-player {
+    background-color: black;
+}
+
+.github-btn {
+    margin-top: 1%;
+}

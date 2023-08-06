@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+.background {
+  background-color: #ede1de;
+}
+
+.text {
+  font-family:'Calibre','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;;
+}
+
+
+.mono-font {
+  font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+}
+
+.block-sec {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.white {
+  color: #fff;
+  padding: .5em 1em;
+}
+
+.rose {
+  color: #d1aca5;
+  padding: 1em 2em;
+}
+
+.rose:hover {
+  color:#fff;
+}
+
+.button-def {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #d1aca5;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-def:disabled {
+  pointer-events: none;
+}
+
+.button-def:hover {
+  color: #fff;
+  background-color: #d1aca5;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-def:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

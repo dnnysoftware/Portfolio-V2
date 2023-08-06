@@ -1,0 +1,59 @@
+
+.hard-pink {
+    color: #ba8378;
+}
+
+.bay-leaf {
+    color: #82ac85;
+}
+
+.link-tag {
+    text-decoration: none;
+}
+
+.brown-black {
+    color: #251910;
+}
+
+.grey {
+    color: #8a8a8a
+}
+
+.email-btn {
+    margin-top: 30px;
+}
+
+.intro-desc {
+    max-width: 500px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Title Information & Links */
+
+.title-section {
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0px;
+
+}
+
+.title {
+    font-size: 4em;
+    position: relative;
+} 
+
+.desc {
+    font-size: 3em;
+}
+
+
