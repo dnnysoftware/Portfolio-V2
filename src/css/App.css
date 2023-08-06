@@ -74,41 +74,6 @@ html {
 
 /* Email Styles */
 
-.jSIwrL {
-  width: 60px;
-  position: fixed;
-  bottom: 0px;
-  left: auto;
-  right: 40px;
-  z-index: 10;
-  color: var(--light-slate);
-}
-
-.jSIwrL {
-  left: auto;
-  right: 20px;
-}
-
-.jJFfEJ {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.jJFfEJ a {
-  color: #8a8a8a;
-  text-decoration: none;
-  margin: 20px auto;
-  padding: 10px;
-  font-family: var(--font-mono);
-  font-size: var(--fz-xxs);
-  line-height: var(--fz-lg);
-  letter-spacing: 0.1em;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-}
 
 a {
   display: inline-block;
@@ -119,14 +84,6 @@ a {
   transition: var(--transition);
 }
 
-.jJFfEJ::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: var(--light-slate);
-}
 
 :root { 
   --dark-navy: #020c1b;
@@ -160,3 +117,6 @@ a {
   --easing: cubic-bezier(0.645,0.045,0.355,1);
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
+
+
+/* Add this CSS below your existing CSS */

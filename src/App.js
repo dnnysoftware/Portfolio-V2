@@ -5,20 +5,12 @@ import Experience from './Experience';
 import Education from './Education';
 import Projects from './Projects';
 import Model from './Model';
+import Links from './Links';
+import Email from './Email';
 import { Container } from 'react-bootstrap';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Email() {
-
-  return (
-    <div orientation="right" class="side__StyledSideElement-sc-1duznzb-0 jSIwrL">
-      <div class="jJFfEJ fade-enter-done">
-        <a href="mailto: softwarebydanielmironiuk@gmail.com">softwarebydanielmironiuk@gmail.com</a>
-      </div>
-    </div>
-  );
-}
 
 function App() {
 
@@ -27,6 +19,7 @@ function App() {
       <Navigation/>
       <Container className='intro-container justify-content-center' fluid='xxl' id='home'>
         <Email/>
+        <Links/>
         <section className='block-sec'>
           <Intro/>
         </section>

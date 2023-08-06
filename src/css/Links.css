@@ -1,0 +1,47 @@
+@media (max-width: 1080px) {
+    .links-sec {
+        left: 20px;
+        right: auto;
+    }
+}
+  
+  .links-sec {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--light-slate);
+  }
+
+  .uList {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  .uList li a {
+    padding: 10px;
+  }
+
+  .uList::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+
+.uList li a svg path {
+    transition: fill 0.5s ease; 
+}
+
+.uList li a:hover svg path {
+    fill: #82ac85;
+}

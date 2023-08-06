@@ -22,7 +22,7 @@ function Intro() {
                     <div className='intro-desc'>
                         <p className='grey'>
                             I'm a full stack engineer and cloud developer that enjoys bringing value and making people smile. 
-                            I graduated from the <a className="bay-leaf link-tag" href="https://www.rit.edu/" target="_blank" rel="noreferrer">Rochester Institute of Technology</a> in 2023 with a Bachelor's 
+                            I graduated from the<a className="bay-leaf link-tag hover-underline-animation" href="https://www.rit.edu/" target="_blank" rel="noreferrer">Rochester Institute of Technology</a> in 2023 with a Bachelor's 
                             degree in Software Engineering, and various internship experiences under my belt.
                         </p>
                     </div>
@@ -39,10 +39,3 @@ function Intro() {
 
 export default Intro;
 
-{/* <Container>
-<Row xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
-<Col><Button bsPrefix={btns} className='rose' href="https://github.com/dnnysoftware" rel="noreferrer" target="_blank">Github</Button></Col>
-<Col><Button bsPrefix={btns} className='rose' href='https://www.linkedin.com/in/daniel-mironiuk/' rel="noreferrer" target="_blank">LinkedIn</Button></Col>
-<Col><Button bsPrefix={btns} className='rose' href="mailto: softwarebydanielmironiuk@gmail.com">Email</Button></Col>
-</Row>
-</Container> */}
