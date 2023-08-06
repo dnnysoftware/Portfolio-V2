@@ -1,20 +1,3 @@
-.text-about-me {
-    margin: 1vh 2vw;
-}
-
-.desc-text {
-    font-size: 1em;
-}
-  
-.desc-title {
-    font-size: 2em;
-}
-
-.desc-size {
-    font-size: .9em;
-}
-
-/* New */
 
 .numbered-heading {
     display: flex;
@@ -41,7 +24,7 @@ h2 {
     line-height: 1.1;
 }
 
-.bNXWUU .inner {
+.about-sec .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
@@ -57,6 +40,7 @@ p {
 
 p {
     margin: 0px 0px 15px;
+    color: #8a8a8a;
 }
 
 p > a {
@@ -72,7 +56,7 @@ p:last-child, p:last-of-type {
     margin: 0px;
 }
 
-.kNIdQM ul.skills-list {
+.about-text ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     padding: 0px;
@@ -91,7 +75,7 @@ ul {
     padding-inline-start: 40px;
 }
 
-.kNIdQM ul.skills-list li {
+.about-text ul.skills-list li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -102,18 +86,19 @@ ul {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    color: #8a8a8a;
 }
 
-.kNIdQM ul.skills-list li::before {
+.about-text ul.skills-list li::before {
     content: "❖";
     position: absolute;
     left: 0px;
     color: #ba8378;
-    font-size: var(--fz-sm);
-    line-height: 12px;
+    font-size: var(--fz-lg);
+    line-height: 20px;
 }
 
-.kNIdQM ul.skills-list li {
+.about-text ul.skills-list li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -121,9 +106,9 @@ li {
     font-size: var(--fz-xs);
 }
 
-.kNIdQM ul.skills-list {
+.about-text ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     padding: 0px;
     margin: 20px 0px 0px;
     overflow: hidden;
@@ -157,3 +142,24 @@ li {
         width: 200px;
     }
 }
+
+
+div {
+    display: block;
+}
+
+
+@media (max-width: 1000px) {
+    .about-sec .inner {
+      display: block;
+    }    
+    .wrapper {
+      width: 50%;
+      margin: 0 auto; /* Add this line to center the .wrapper */
+    }
+    .profile-image {
+      justify-content: center;
+      margin-top: 4em;
+    }
+  }
+

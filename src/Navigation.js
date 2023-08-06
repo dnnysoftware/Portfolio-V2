@@ -58,12 +58,12 @@ function Navigation() {
                 <b className='num mono-font'>01.</b><span className='myCustomNavLink'>About</span>
               </span>
             </Nav.Link>
-            <Nav.Link href="#education" bsPrefix={navLink}>
+            <Nav.Link href="#organizations" bsPrefix={navLink}>
               <span
               className={activeLink === 1 ? 'nav-click active' : 'nav-click'}
               onClick={() => handleLinkClick(1)}
               >
-                <b className='num mono-font'>02.</b><span className='myCustomNavLink'>Education</span>
+                <b className='num mono-font'>02.</b><span className='myCustomNavLink'>Organizations</span>
               </span>
             </Nav.Link>
             <Nav.Link href="#expirence" bsPrefix={navLink}>
