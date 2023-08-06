@@ -9,7 +9,16 @@ import { Container } from 'react-bootstrap';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+function Email() {
 
+  return (
+    <div orientation="right" class="side__StyledSideElement-sc-1duznzb-0 jSIwrL">
+      <div class="jJFfEJ fade-enter-done">
+        <a href="mailto: softwarebydanielmironiuk@gmail.com">softwarebydanielmironiuk@gmail.com</a>
+      </div>
+    </div>
+  );
+}
 
 function App() {
 
@@ -17,6 +26,7 @@ function App() {
     <div className='background'>
       <Navigation/>
       <Container className='intro-container justify-content-center' fluid='xxl' id='home'>
+        <Email/>
         <section className='block-sec'>
           <Intro/>
         </section>

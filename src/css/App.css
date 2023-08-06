@@ -71,3 +71,92 @@ html {
   box-shadow: none;
   transform: translateY(0);
 }
+
+/* Email Styles */
+
+.jSIwrL {
+  width: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: var(--light-slate);
+}
+
+.jSIwrL {
+  left: auto;
+  right: 20px;
+}
+
+.jJFfEJ {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.jJFfEJ a {
+  color: #8a8a8a;
+  text-decoration: none;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: var(--fz-lg);
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+.jJFfEJ::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+:root { 
+  --dark-navy: #020c1b;
+  --navy: #eae1dc;
+  --light-navy: #f0eae7;
+  --lightest-navy: #f7f3f1;
+  --navy-shadow: rgba(2,12,27,0.7);
+  --dark-slate: #495670;
+  --slate: #8e8d8a;
+  --light-slate: #72716e;
+  --lightest-slate: #474745;
+  --white: #e6f1ff;
+  --green: #e85a4f;
+  --green-tint-dark: #8b362f;
+  --green-tint: #f6bdb9;
+  --font-sans: 'Calibre','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+  --font-mono: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+  --border-radius: 8px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --tab-height: 42px;
+  --tab-width: 120px;
+  --easing: cubic-bezier(0.645,0.045,0.355,1);
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}

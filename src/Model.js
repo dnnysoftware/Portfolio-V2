@@ -21,7 +21,7 @@ function Model() {
 
     return (
         <div className='intro-col'>
-            <Canvas shadows camera={{ fov: 75, near: 0.1, far: 1000, position: [10, 2, 4] }}>
+            <Canvas shadows camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 2, 4] }}>
                 <Stage environment="sunset">
                     <group scale={0.01}>
                         <ModelComponent />
