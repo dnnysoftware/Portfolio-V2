@@ -24,7 +24,7 @@ function App() {
           <Intro/>
         </section>
         <section className='block-sec'>
-          <Model/>
+          {/* <Model/> */}
         </section>
         <section className='block-sec'>
           <AboutMe/>

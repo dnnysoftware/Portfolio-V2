@@ -50,35 +50,35 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-spacing'/>
         <Navbar.Collapse className='nav-spacing' id="basic-navbar-nav">
           <Nav className="ml-auto nav-spacing">
-            <Nav.Link href="#projects" bsPrefix={navLink}>
+            <Nav.Link href="#about" bsPrefix={navLink}>
               <span
               className={activeLink === 0 ? 'nav-click active' : 'nav-click'}
               onClick={() => handleLinkClick(0)}
               >
-                <b className='num mono-font'>01.</b><span className='myCustomNavLink'>Projects</span>
+                <b className='num mono-font'>01.</b><span className='myCustomNavLink'>About</span>
               </span>
             </Nav.Link>
-            <Nav.Link href="#expirence" bsPrefix={navLink}>
+            <Nav.Link href="#education" bsPrefix={navLink}>
               <span
               className={activeLink === 1 ? 'nav-click active' : 'nav-click'}
               onClick={() => handleLinkClick(1)}
               >
-                <b className='num mono-font'>02.</b><span className='myCustomNavLink'>Expirence</span>
+                <b className='num mono-font'>02.</b><span className='myCustomNavLink'>Education</span>
               </span>
             </Nav.Link>
-            <Nav.Link href="#education" bsPrefix={navLink}>
+            <Nav.Link href="#expirence" bsPrefix={navLink}>
               <span 
               className={activeLink === 2 ? 'nav-click active' : 'nav-click'}
               onClick={() => handleLinkClick(2)}>
-                <b className='num mono-font'>03.</b><span className='myCustomNavLink'>Education</span>
+                <b className='num mono-font'>03.</b><span className='myCustomNavLink'>Experience</span>
               </span>
             </Nav.Link>
-            <Nav.Link href="#about" bsPrefix={navLink}>
+            <Nav.Link href="#projects" bsPrefix={navLink}>
               <span 
               className={activeLink === 3 ? 'nav-click active' : 'nav-click'}
               onClick={() => handleLinkClick(3)}
               >
-                <b className='num mono-font'>04.</b><span className='myCustomNavLink'>About</span>
+                <b className='num mono-font'>04.</b><span className='myCustomNavLink'>Projects</span>
               </span>
             </Nav.Link>
             <Nav.Link href="./docs/Daniel_Mironiuk_Resume.pdf" target="_blank">
