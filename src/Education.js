@@ -7,10 +7,10 @@ import './css/Education.css';
 function Education() {
     return (
         <>
-            <Container className='education-container' id='organizations'>
+            <Container className='education-container'>
                 <div>
                     <section className='education-section' data-sr-id="1">
-                        <h2 class="numbered-heading-2">Organizations</h2>
+                        <h2 class="numbered-heading-3">Organizations</h2>
                         <div class="inner">
                             <div class="edu-text-sec">
                                 <Image className='img-club' src='img/sse.png' alt='SSE' fluid />

@@ -21,6 +21,14 @@ html {
   margin: 0 auto;
 }
 
+.space {
+  height: 100vh;
+}
+
+.proj {
+  margin-top: 200px;
+}
+
 /* Buttons */
 
 .white {
@@ -115,6 +123,8 @@ a {
 :root { 
   --dark-navy: #020c1b;
   --navy: #eae1dc;
+  --bay: #82ac85;
+  --pink-hard: #ba8378;
   --light-navy: #f0eae7;
   --lightest-navy: #f7f3f1;
   --navy-shadow: rgba(2,12,27,0.7);

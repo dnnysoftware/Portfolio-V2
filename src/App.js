@@ -26,16 +26,16 @@ function App() {
         <section className='block-sec'>
           {/* <Model/> */}
         </section>
-        <section className='block-sec'>
+        <section className='block-sec'  id='about'>
           <AboutMe/>
         </section>
-        <section className='block-sec'>
-          <Education />
-        </section>
-        <section className='block-sec'>
+        <section className='block-sec space d-flex justify-content-center align-items-center' id='experience'>
           <Experience/> 
         </section>
-        <section className='block-sec'>
+        <section className='block-sec' id='organizations'>
+          <Education />
+        </section>
+        <section className='block-sec proj' id='projects'>
           <Projects/>
         </section>
       </Container>
