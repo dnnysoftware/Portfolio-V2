@@ -1,4 +1,28 @@
+.proj-title {
+  color: var(--pink-hard);
+  font-family: var(--font-sans)
+}
 
+.project-row {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .project-row {
+      width: 100%;
+  }
+}
+
+
+a:hover svg path {
+  fill: #fff;
+}
 
   .next-prev {
     padding: 8px 16px;

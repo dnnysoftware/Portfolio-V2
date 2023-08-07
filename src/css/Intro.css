@@ -55,3 +55,9 @@
     font-size: 3em;
 }
 
+
+@media (max-width: 768px) {
+    .title-section {
+        margin-top: 100px;
+    }
+}

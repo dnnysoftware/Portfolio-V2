@@ -38,13 +38,6 @@
 
 
 
-.jdfosx {
-    max-width: 700px;
-    visibility: visible; 
-    opacity: 1; 
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); 
-    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-}
 
 section {
     display: block;
@@ -164,9 +157,6 @@ h3 {
     font-weight: 600;
     color: var(--lightest-slate);
     line-height: 1.1;
-}
-
-h3 {
     display: block;
     font-size: 1.17em;
     margin-block-start: 1em;
@@ -280,11 +270,6 @@ element.style {
     overflow-y: scroll;
 }
 
-.content-container {
-    position: relative;
-    width: 100%;
-    margin-left: 20px;
-}
 
 .jobs__StyledTabPanel-sc-59sdss-5 {
     width: 100%;
