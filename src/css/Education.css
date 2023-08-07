@@ -35,17 +35,6 @@
 
 /* Images */
 
-.edu-text-sec {
-    display: grid;
-    padding: 2rem;
-    grid-template-columns: 300px 1fr;
-    gap: 1rem;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font: 500 100%/1.5 system-ui;
-}
-
 .img-club {
     max-width: 100%;
     height: auto;
@@ -60,16 +49,39 @@
     margin-inline-end: 0px;
 }
 
-@media (max-width: 1000px) {
+.edu-text-sec {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+  }
+  
+  /* Add this CSS to make the images centered on screens less than 1000px */
+  @media (max-width: 1000px) {
     .edu-text-sec {
-      display: block;
-      font-size: 80%;
+      grid-template-columns: 1fr;
+      text-align: center;
     }
+  
+    .img-club {
+      margin: 0 auto;
+    }
+  
     .edu-text {
       position: relative;
       padding: 1rem;
-      background: rgba(white, 0.8);
+      background: rgba(255, 255, 255, 0.8);
     }
   }
+
+  
+  
+  
+  
+  
   
 

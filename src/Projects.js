@@ -79,7 +79,7 @@ function Projects() {
                 </a>
                 <div className='video-container'>
                     <video className='video-player' width='100%' height='100%' controls poster={currentProject.posterImage}>
-                    <source src={currentProject.videoSource} type='video/mp4' />
+                        <source src={currentProject.videoSource} type='video/mp4' />
                     </video>
                 </div>
                 </div>

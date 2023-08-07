@@ -22,7 +22,7 @@
 
 .nav-click.active {
     box-sizing: border-box;
-    padding: .4em;
+    padding: .2em;
     border-color: white;
     border-width: .2em;
     text-align: center;
