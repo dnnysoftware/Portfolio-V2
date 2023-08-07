@@ -2,7 +2,7 @@ import Navigation from './Navigation';
 import Intro from './Intro';
 import AboutMe from "./AboutMe";
 import Experience from './Experience';
-import Education from './Education';
+import Organizations from './Organizations';
 import Projects from './Projects';
 import Model from './Model';
 import Links from './Links';
@@ -28,7 +28,7 @@ function App() {
           <Experience/> 
         </section>
         <section className='block-sec' id='organizations'>
-          <Education />
+          <Organizations />
         </section>
         <section className='block-sec proj' id='projects'>
           <Projects/>
