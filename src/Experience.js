@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Container} from 'react-bootstrap';
 import './css/Expirence.css';
 
 function Experience() {
@@ -107,53 +108,58 @@ function Experience() {
     };
 
     return (
-        <div className='experience-section' fluid='fluid'>
-            <div className='about-wrapper'>
-                <section className="jobs__StyledJobsSection-sc-59sdss-0" data-sr-id="2">
-                    <h2 className="numbered-heading-2">Experience</h2>
-                    <div className="inner">
-                        <div className="tabs-container">
-                            <div role="tablist" aria-label="Job tabs" className="jobs__StyledTabList-sc-59sdss-1 sAHTI">
-                                {tabData.map((tab, index) => (
-                                    <button
-                                        key={index}
-                                        id={tab.id}
-                                        role="tab"
-                                        tabIndex={activeTab === index ? "0" : "-1"}
-                                        aria-selected={activeTab === index ? "true" : "false"}
-                                        aria-controls={`panel-${index}`}
-                                        className={`jobs__StyledTabButton-sc-59sdss-2 ${activeTab === index ? "deLjYW" : "jBtKSS"}`}
-                                        onClick={() => handleTabClick(index)}
-                                    >
-                                        <span>{tab.title}</span>
-                                    </button>
-                                ))}
-                                <div className="jobs__StyledHighlight-sc-59sdss-3 fLsUxN"></div>
-                            </div>
-                        </div>
-                        <div className="content-container">
-                            <div className="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
-                                {tabData.map((tab, index) => (
-                                    <div
-                                        key={index}
-                                        id={`panel-${index}`}
-                                        role="tabpanel"
-                                        tabIndex={activeTab === index ? "0" : "-1"}
-                                        aria-labelledby={tab.id}
-                                        aria-hidden={activeTab !== index ? "true" : "false"}
-                                        className={`jobs__StyledTabPanel-sc-59sdss-5 lmjnwA ${activeTab !== index ? "hidden" : ""}`}
-                                        hidden={activeTab !== index}
-                                    >
-                                        {tab.content}
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+        <Container className='about-me-container' id='about' fluid='fluid'>
+            <div className='experience-section' fluid='fluid'>
+                <section data-sr-id="2">
+                <h2 className="numbered-heading-2">Experience</h2>
+                <div className="inner">
+                    <div className="tabs-container">
+                    <div
+                        role="tablist"
+                        aria-label="Job tabs"
+                        className={`sAHTI ${activeTab !== 0 ? "horizontal-scroll" : ""}`}
+                    >
+                        {tabData.map((tab, index) => (
+                        <button
+                            key={index}
+                            id={tab.id}
+                            role="tab"
+                            tabIndex={activeTab === index ? "0" : "-1"}
+                            aria-selected={activeTab === index ? "true" : "false"}
+                            aria-controls={`panel-${index}`}
+                            className={`${activeTab === index ? "deLjYW" : "jBtKSS"}`}
+                            onClick={() => handleTabClick(index)}
+                        >
+                            <span>{tab.title}</span>
+                        </button>
+                        ))}
                     </div>
+                    </div>
+                    <div className="content-container">
+                    <div className="jobs__StyledTabPanels-sc-59sdss-4">
+                        {tabData.map((tab, index) => (
+                        <div
+                            key={index}
+                            id={`panel-${index}`}
+                            role="tabpanel"
+                            tabIndex={activeTab === index ? "0" : "-1"}
+                            aria-labelledby={tab.id}
+                            aria-hidden={activeTab !== index ? "true" : "false"}
+                            className={`jobs__StyledTabPanel-sc-59sdss-5 lmjnwA ${
+                            activeTab !== index ? "hidden" : ""
+                            }`}
+                            hidden={activeTab !== index}
+                        >
+                            {tab.content}
+                        </div>
+                        ))}
+                    </div>
+                    </div>
+                </div>
                 </section>
             </div>
-        </div>
-    );
+          </Container>
+      );
 }
 
 export default Experience;

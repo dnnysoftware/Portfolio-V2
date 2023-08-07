@@ -1,4 +1,5 @@
 .intro-col {
-    height: 100vh;
-    z-index: 1000;
+    position:sticky;
+    height: 60vh; 
 }
+

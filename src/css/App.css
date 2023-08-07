@@ -22,13 +22,6 @@ html {
   margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
-  .block-sec.proj {
-    width: 100%;
-  }
-
-}
-
 .space {
   height: 100vh;
 }

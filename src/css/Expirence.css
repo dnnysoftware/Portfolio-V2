@@ -112,13 +112,10 @@ button {
     align-items: flex-start;
     cursor: default;
     box-sizing: border-box;
-    background-color: buttonface;
+    background-color: #fff;
     margin: 0em;
     padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
+
 }
 
 .sAHTI {
@@ -143,8 +140,8 @@ button {
     width: 100%;
     height: var(--tab-height);
     padding: 0px 20px 2px;
-    border-left: 2px solid var(--lightest-navy);
-    background-color: transparent;
+    border-left: 2px solid var(--pink-hard);
+    background-color: #FFFFFF66;
     color: var(--pink-hard);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
@@ -274,6 +271,7 @@ element.style {
 }
 
 
+
 /* ... Existing styles ... */
 
 .inner {
@@ -320,3 +318,61 @@ element.style {
 
 /* ... Remaining styles ... */
 
+@media (max-width: 1000px) {
+    .sAHTI {
+      display: flex; /* Arrange buttons in a row format */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      scroll-behavior: smooth; /* Add smooth scrolling */
+      -webkit-overflow-scrolling: touch; /* Add smooth scrolling for iOS devices */
+      justify-content: flex-start; /* Align buttons to the left */
+    }
+  
+    .sAHTI.horizontal-scroll {
+      /* Use this class to set the width for horizontal scrolling */
+      width: 100%;
+      max-width: calc(100% - 40px); /* Adjust this value to fit your design */
+    }
+  
+    .jBtKSS,
+    .deLjYW {
+      /* Adjust the width and other styles for the buttons in the row format */
+      justify-content: center;
+      min-width: 180px;
+      white-space: nowrap;
+      margin: 0;
+      border-left: none;
+      border-bottom: 2px solid var(--lightest-navy);
+    }
+  
+    .jBtKSS:not(:last-child),
+    .deLjYW:not(:last-child) {
+      margin-right: 10px; /* Add spacing between buttons */
+    }
+  
+    .deLjYW {
+      background-color: transparent;
+      color: var(--pink-hard);
+      border-left: none;
+      border-bottom: 2px solid var(--pink-hard);
+      background-color: #FFFFFF66;
+    }
+  
+    .lmjnwA {
+      width: 100%;
+      padding: 10px 5px;
+      overflow-x: hidden; /* Hide overflowing content horizontally */
+    }
+
+    .inner {
+        flex-direction: column;
+    }
+    .content-container {
+        width: 80vw;
+    }
+
+    .tabs-container {
+        width: 80vw;
+    }
+
+    
+  }

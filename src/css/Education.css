@@ -73,6 +73,7 @@
   
     .edu-text {
       position: relative;
+      border-radius: 25px;
       padding: 1rem;
       background: rgba(255, 255, 255, 0.8);
     }

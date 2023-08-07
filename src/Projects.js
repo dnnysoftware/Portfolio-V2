@@ -87,7 +87,7 @@ function Projects() {
             <a className='button-proj padd-link' href={currentProject.githubLink} rel='noreferrer' target='_blank'>
               {currentProject.title}
             </a>
-            <div key={currentProject.videoSource}>
+            <div className='video-cont' key={currentProject.videoSource}>
               {currentProject.videoSource && (
                 <VideoPlayer videoSource={currentProject.videoSource} posterImage={currentProject.posterImage} />
               )}

@@ -21,9 +21,6 @@ function App() {
         <section className='block-sec'>
           <Intro/>
         </section>
-        <section className='block-sec'>
-          {/* <Model/> */}
-        </section>
         <section className='block-sec'  id='about'>
           <AboutMe/>
         </section>
@@ -35,6 +32,9 @@ function App() {
         </section>
         <section className='block-sec proj' id='projects'>
           <Projects/>
+        </section>
+        <section>
+          <Model/>
         </section>
         <section>
           <Email/>

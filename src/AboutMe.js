@@ -4,16 +4,16 @@ import './css/AboutMe.css';
 
 function AboutMe() {
   return (
-    <Container className='about-me-container' id='about' fluid='fluid'>
+    <Container className='about-me-container' fluid='fluid'>
       <div className='about-wrapper'>
-        <section id="about" className="about-sec" data-sr-id="0">
+        <section className="about-sec" data-sr-id="0">
           <h2 className="numbered-heading">About Me</h2>
           <div className="inner">
             <div className="about-text">
               <div>
                 <p>Hello! My name is Daniel.</p>
                 <p> As a passionate software engineer, I thrive on creating innovative solutions through code.
-                During my time at <a className="hover-underline-animation" href="https://www.rit.edu/" rel="noopener noreferrer" target="_blank">RIT</a>, I derived a strong foundation in computer science,
+                During my time at <a className="hover-underline-animation" href="https://www.rit.edu/" rel="noopener noreferrer" target="_blank">RIT</a>, I derived a strong foundation in computer science
                 and software engineering practices which gained me hands-on experience
                 from internships, some were at <a className="hover-underline-animation" href="https://foundrydigital.com/" rel="noopener noreferrer" target="_blank">Foundry Digital</a> and <a className="hover-underline-animation" href="https://www.sandstonetechnologies.com/" rel="noopener noreferrer" target="_blank">Sandstone Technologies</a>, 
                 both where I collaborated with teams to build web and cloud applications.
