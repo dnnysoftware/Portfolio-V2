@@ -1,6 +1,6 @@
 
   .links-sec {
-    width: 40px;
+
     position: fixed;
     bottom: 0px;
     left: 40px;
@@ -40,14 +40,24 @@
 
 @media (max-width: 1000px) {
   .links-sec {
+    left: 0;
     position: relative;
-    justify-content: center;
-    align-items: center;
   }
 
   .uList {
     flex-direction: row;
     gap: 20px;
   }
+
+  .uList::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+
+  
 
 }

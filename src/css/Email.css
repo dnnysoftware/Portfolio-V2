@@ -48,3 +48,9 @@
   .email-link a:hover {
     color: #82ac85; 
 }
+
+@media (max-width: 1000px) {
+  .email-sec {
+    display: none;
+  }
+}

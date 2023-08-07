@@ -39,7 +39,7 @@ function App() {
         <section>
           <Email/>
         </section>
-        <section>
+        <section className="d-flex justify-content-center">
           <Links/> 
         </section>
       </Container>
