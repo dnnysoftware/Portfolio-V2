@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Container} from 'react-bootstrap';
-import './css/Expirence.css';
+import './css/Experience.css';
 
 function Experience() {
     const tabData = [
@@ -108,55 +108,51 @@ function Experience() {
     };
 
     return (
-        <Container className='about-me-container' id='about' fluid='fluid'>
-            <div className='experience-section' fluid='fluid'>
-                <section data-sr-id="2">
-                <h2 className="numbered-heading-2">Experience</h2>
-                <div className="inner">
-                    <div className="tabs-container">
-                    <div
-                        role="tablist"
-                        aria-label="Job tabs"
-                        className={`sAHTI ${activeTab !== 0 ? "horizontal-scroll" : ""}`}
+        <Container className='expirence-container' fluid='fluid'>
+            <h2 className="numbered-heading-2">Experience</h2>
+            <div className="inner">
+                <div className="tabs-container">
+                <div
+                    role="tablist"
+                    aria-label="Job tabs"
+                    className={`buttons-exp ${activeTab !== 0 ? "horizontal-scroll" : ""}`}
+                >
+                    {tabData.map((tab, index) => (
+                    <button
+                        key={index}
+                        id={tab.id}
+                        role="tab"
+                        tabIndex={activeTab === index ? "0" : "-1"}
+                        aria-selected={activeTab === index ? "true" : "false"}
+                        aria-controls={`panel-${index}`}
+                        className={`${activeTab === index ? "active-btn" : "inactive-btns"}`}
+                        onClick={() => handleTabClick(index)}
                     >
-                        {tabData.map((tab, index) => (
-                        <button
-                            key={index}
-                            id={tab.id}
-                            role="tab"
-                            tabIndex={activeTab === index ? "0" : "-1"}
-                            aria-selected={activeTab === index ? "true" : "false"}
-                            aria-controls={`panel-${index}`}
-                            className={`${activeTab === index ? "deLjYW" : "jBtKSS"}`}
-                            onClick={() => handleTabClick(index)}
-                        >
-                            <span>{tab.title}</span>
-                        </button>
-                        ))}
-                    </div>
-                    </div>
-                    <div className="content-container">
-                    <div className="jobs__StyledTabPanels-sc-59sdss-4">
-                        {tabData.map((tab, index) => (
-                        <div
-                            key={index}
-                            id={`panel-${index}`}
-                            role="tabpanel"
-                            tabIndex={activeTab === index ? "0" : "-1"}
-                            aria-labelledby={tab.id}
-                            aria-hidden={activeTab !== index ? "true" : "false"}
-                            className={`jobs__StyledTabPanel-sc-59sdss-5 lmjnwA ${
-                            activeTab !== index ? "hidden" : ""
-                            }`}
-                            hidden={activeTab !== index}
-                        >
-                            {tab.content}
-                        </div>
-                        ))}
-                    </div>
-                    </div>
+                        <span>{tab.title}</span>
+                    </button>
+                    ))}
                 </div>
-                </section>
+            </div>
+            <div className="content-container">
+                <div>
+                    {tabData.map((tab, index) => (
+                    <div
+                        key={index}
+                        id={`panel-${index}`}
+                        role="tabpanel"
+                        tabIndex={activeTab === index ? "0" : "-1"}
+                        aria-labelledby={tab.id}
+                        aria-hidden={activeTab !== index ? "true" : "false"}
+                        className={`exp-content ${
+                        activeTab !== index ? "hidden" : ""
+                        }`}
+                        hidden={activeTab !== index}
+                    >
+                        {tab.content}
+                    </div>
+                    ))}
+                </div>
+                </div>
             </div>
           </Container>
       );

@@ -36,11 +36,7 @@
     background-color: var(--lightest-navy);
 }
 
-@media (min-width: 700px) {
-    .jdfosx .inner {
-        min-height: 340px;
-    }
-}
+
 
 .jdfosx {
     max-width: 700px;
@@ -50,16 +46,11 @@
     transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
-.jdfosx .inner {
-    display: flex;
-}
-
-
 section {
     display: block;
 }
 
-.sAHTI {
+.buttons-exp {
     position: relative;
     z-index: 3;
     width: max-content;
@@ -69,7 +60,7 @@ section {
     overflow-y: scroll;
 }
 
-.jBtKSS {
+.inactive-btns {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
@@ -118,7 +109,7 @@ button {
 
 }
 
-.sAHTI {
+.buttons-exp {
     position: relative;
     z-index: 3;
     width: max-content;
@@ -128,7 +119,7 @@ button {
     overflow-y: scroll;
 }
 
-.deLjYW {
+.active-btn {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
@@ -155,13 +146,13 @@ button {
     margin-left: 20px;
 }
 
-.lmjnwA {
+.exp-content {
     width: 100%;
     height: auto;
     padding: 10px 5px;
 }
 
-.lmjnwA h3 {
+.exp-content h3 {
     margin-bottom: 2px;
     font-size: var(--fz-xxl);
     font-weight: 500;
@@ -185,7 +176,7 @@ h3 {
     font-weight: bold;
 }
 
-.lmjnwA h3 .company {
+.exp-content h3 .company {
     color: var(--bay);
 }
 
@@ -227,7 +218,7 @@ p {
     margin-inline-end: 0px;
 }
 
-.lmjnwA ul {
+.exp-content ul {
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -244,7 +235,7 @@ ul {
     padding-inline-start: 40px;
 }
 
-.lmjnwA ul li {
+.exp-content ul li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -263,7 +254,7 @@ element.style {
 }
 
 
-.lmjnwA ul li::before {
+.exp-content ul li::before {
     content: "❖";
     position: absolute;
     left: 0px;
@@ -276,6 +267,7 @@ element.style {
 
 .inner {
     display: flex;
+    height: 100%;
 }
 
 .tabs-container {
@@ -300,16 +292,7 @@ element.style {
     padding: 10px 5px;
 }
 
-.jobs__StyledTabPanels-sc-59sdss-4 {
-    position: relative;
-    width: 100%;
-    margin-left: 20px;
-    /* Add fixed height and enable scrolling */
-    height: 300px; /* Adjust this value to fit your needs */
-    overflow-y: auto;
-}
-
-.lmjnwA {
+.exp-content {
     width: 100%; /* Set a fixed width to prevent horizontal movement */
     max-width: 800px; /* Optionally, set a maximum width for responsiveness */
     padding: 10px 5px;
@@ -319,7 +302,7 @@ element.style {
 /* ... Remaining styles ... */
 
 @media (max-width: 1000px) {
-    .sAHTI {
+    .buttons-exp {
       display: flex; /* Arrange buttons in a row format */
       overflow-x: auto; /* Enable horizontal scrolling */
       scroll-behavior: smooth; /* Add smooth scrolling */
@@ -333,8 +316,8 @@ element.style {
       max-width: calc(100% - 40px); /* Adjust this value to fit your design */
     }
   
-    .jBtKSS,
-    .deLjYW {
+    .inactive-btns,
+    .active-btn {
       /* Adjust the width and other styles for the buttons in the row format */
       justify-content: center;
       min-width: 180px;
@@ -344,12 +327,12 @@ element.style {
       border-bottom: 2px solid var(--lightest-navy);
     }
   
-    .jBtKSS:not(:last-child),
-    .deLjYW:not(:last-child) {
+    .inactive-btns:not(:last-child),
+    .active-btn:not(:last-child) {
       margin-right: 10px; /* Add spacing between buttons */
     }
   
-    .deLjYW {
+    .active-btn {
       background-color: transparent;
       color: var(--pink-hard);
       border-left: none;
@@ -357,7 +340,7 @@ element.style {
       background-color: #FFFFFF66;
     }
   
-    .lmjnwA {
+    .exp-content {
       width: 100%;
       padding: 10px 5px;
       overflow-x: hidden; /* Hide overflowing content horizontally */
