@@ -6,10 +6,10 @@ function AboutMe() {
   return (
     <Container className='about-me-container' id='about' fluid='fluid'>
       <div className='about-wrapper'>
-        <section id="about" class="about-sec" data-sr-id="0">
-          <h2 class="numbered-heading">About Me</h2>
-          <div class="inner">
-            <div class="about-text">
+        <section id="about" className="about-sec" data-sr-id="0">
+          <h2 className="numbered-heading">About Me</h2>
+          <div className="inner">
+            <div className="about-text">
               <div>
                 <p>Hello! My name is Daniel.</p>
                 <p> As a passionate software engineer, I thrive on creating innovative solutions through code.
@@ -21,7 +21,7 @@ function AboutMe() {
                 I am constantly striving to stay updated with industry advancements. Let's connect and discuss how we can bring innovative ideas to life!</p>
                 <p>Here are my favorite technologies and stacks for building awesome software:</p>
               </div>
-              <ul class="skills-list">
+              <ul className="skills-list">
                 <li>Python</li>
                 <li>Java</li>
                 <li>C#</li>
@@ -33,9 +33,9 @@ function AboutMe() {
                 <li>AWS</li>
               </ul>
           </div>
-            <div class="profile-image">
-                <div class="wrapper">
-                  <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+            <div className="profile-image">
+                <div className="wrapper">
+                  <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
                     <div>
                       <Image rounded="true" className='portrait' src='img/Suit_Nice_Pink.png' alt='Portrait of Myself' fluid />
                     </div>

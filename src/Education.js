@@ -10,9 +10,9 @@ function Education() {
             <Container className='education-container'>
                 <div>
                     <section className='education-section' data-sr-id="1">
-                        <h2 class="numbered-heading-3">Organizations</h2>
-                        <div class="inner">
-                            <div class="edu-text-sec">
+                        <h2 className="numbered-heading-3">Organizations</h2>
+                        <div className="inner">
+                            <div className="edu-text-sec">
                                 <Image className='img-club' src='img/sse_dark.png' alt='SSE' fluid />
                                 <p className='edu-text'>
                                     I was apart of the <a className="hover-underline-animation" href="https://sse.rit.edu/" rel="noopener noreferrer" target="_blank">Society of Software Engineers</a>. As a mentor, I had the privilege of guiding and supporting fellow students, while also contributing to the organization's networking events and development projects. 

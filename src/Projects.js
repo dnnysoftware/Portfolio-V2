@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import './css/Projects.css';
 
+const VideoPlayer = ({ videoSource, posterImage }) => {
+  return (
+    <div className='video-container'>
+      <video className='video-player' width='100%' height='100%' controls poster={posterImage}>
+        <source src={videoSource} type='video/mp4' />
+      </video>
+    </div>
+  );
+};
+
+
 function Projects() {
   const projectsData = [
     {
@@ -54,6 +65,7 @@ function Projects() {
   ];
 
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const currentProject = projectsData[currentProjectIndex];
 
   const handlePreviousClick = () => {
     setCurrentProjectIndex((prevIndex) => (prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1));
@@ -63,31 +75,29 @@ function Projects() {
     setCurrentProjectIndex((prevIndex) => (prevIndex === projectsData.length - 1 ? 0 : prevIndex + 1));
   };
 
-  const currentProject = projectsData[currentProjectIndex];
-
   return (
     <div className='projects-section'>
-        <section className="jobs__StyledJobsSection-sc-59sdss-0" data-sr-id="2">
-            <h2 className="numbered-heading-4">Projects</h2>
-            <div className='d-flex flex-row justify-content-center align-items-center text-center'>
-                <button className='button-def previous-button' onClick={handlePreviousClick}>
-                Previous
-                </button>
-                <div className='projects-container'>
-                <a className='github-btn port-button port-button-white port-button-animate button-def' href={currentProject.githubLink} rel='noreferrer' target='_blank'>
-                    {currentProject.title}
-                </a>
-                <div className='video-container'>
-                    <video className='video-player' width='100%' height='100%' controls poster={currentProject.posterImage}>
-                        <source src={currentProject.videoSource} type='video/mp4' />
-                    </video>
-                </div>
-                </div>
-                <button className='button-def next-button' onClick={handleNextClick}>
-                Next
-                </button>
+      <section className="jobs__StyledJobsSection-sc-59sdss-0" data-sr-id="2">
+        <h2 className="numbered-heading-4">Projects</h2>
+        <div className='project-row d-flex flex-row justify-content-center align-items-center text-center'>
+          <button className='button-proj next-prev' onClick={handlePreviousClick}>
+            &#8249;
+          </button>
+          <div className='projects-container'>
+            <a className='button-proj padd-link' href={currentProject.githubLink} rel='noreferrer' target='_blank'>
+              {currentProject.title}
+            </a>
+            <div key={currentProject.videoSource}>
+              {currentProject.videoSource && (
+                <VideoPlayer videoSource={currentProject.videoSource} posterImage={currentProject.posterImage} />
+              )}
             </div>
-        </section>
+          </div>
+          <button className='button-proj next-prev' onClick={handleNextClick}>
+            &#8250;
+          </button>
+        </div>
+      </section>
     </div>
   );
 }

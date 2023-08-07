@@ -1,35 +1,30 @@
 .projects-section {
-    height: 100vh;
-    width: 100%;
+  height: 80vh;
+
 }
 
+
 .projects-container {
-    background-color: white;
-    height: 70vh;
+    justify-content: center;
     border-radius: 25px;
     position: relative;
   }
-  
-  .video-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .video-player {
-    background-color: black;
-  }
-  
-  .previous-button {
-    background-color: #fff;
-    margin-right: 10px;
-  }
-  
-  .next-button {
-    background-color: #fff;
-    margin-left: 10px;
+
+
+  .project-row {
+    /* Remove the flex-row class as it's not needed when centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
+  
+  
+  .next-prev {
+    padding: 8px 16px;
+    margin: 20px;
+  }
 
   .numbered-heading-4::before {
     position: relative;
@@ -63,4 +58,65 @@
     margin-left: 20px;
     background-color: var(--lightest-navy);
 }
+
+
+.white {
+  color: #fff;
+  padding: .5em 1em;
+}
+
+.rose {
+  color: #d1aca5;
+  padding: 1em 2em;
+}
+
+.rose:hover {
+  color:#fff;
+}
+
+.padd-link {
+  padding: 18px 24px;
+}
+
+.video-player {
+  border-radius: 50px;
+}
+
+.button-proj {
+  margin-bottom: 10px;
+  appearance: none;
+  color: #d1aca5;
+  background-color: #fff;
+  border: 2px solid #d1aca5;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-proj:disabled {
+  pointer-events: none;
+}
+
+.button-proj:hover {
+  color: #fff;
+  background-color: #d1aca5;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-proj:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
   

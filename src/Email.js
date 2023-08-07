@@ -3,8 +3,8 @@ import './css/Email.css';
 function Email() {
 
     return (
-      <div orientation="right" class="email-sec">
-        <div class="email-link">
+      <div orientation="right" className="email-sec">
+        <div className="email-link">
           <a href="mailto: softwarebydanielmironiuk@gmail.com">softwarebydanielmironiuk@gmail.com</a>
         </div>
       </div>
