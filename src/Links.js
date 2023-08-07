@@ -3,7 +3,7 @@ import './css/Links.css';
 function Links() {
 
     return(
-      <div orientation="left" class="links-sec">
+      <div  class="links-sec">
         <ul class="uList">
           <li>
             <a href="https://github.com/dnnysoftware" aria-label="GitHub" target="_blank" rel="noreferrer">

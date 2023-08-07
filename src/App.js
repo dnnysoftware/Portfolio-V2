@@ -18,8 +18,6 @@ function App() {
     <div className='background'>
       <Navigation/>
       <Container className='intro-container justify-content-center' fluid='xxl' id='home'>
-        <Email/>
-        <Links/>
         <section className='block-sec'>
           <Intro/>
         </section>
@@ -37,6 +35,12 @@ function App() {
         </section>
         <section className='block-sec proj' id='projects'>
           <Projects/>
+        </section>
+        <section>
+          <Email/>
+        </section>
+        <section>
+          <Links/> 
         </section>
       </Container>
     </div>

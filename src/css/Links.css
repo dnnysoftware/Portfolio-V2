@@ -1,24 +1,16 @@
-@media (max-width: 1080px) {
-    .links-sec {
-        left: 20px;
-        right: auto;
-    }
-}
-  
+
   .links-sec {
     width: 40px;
     position: fixed;
     bottom: 0px;
     left: 40px;
     right: auto;
-    z-index: 10;
     color: var(--light-slate);
   }
 
   .uList {
     display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
     margin: 0px;
     padding: 0px;
@@ -44,4 +36,18 @@
 
 .uList li a:hover svg path {
     fill: #82ac85;
+}
+
+@media (max-width: 1000px) {
+  .links-sec {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uList {
+    flex-direction: row;
+    gap: 20px;
+  }
+
 }
