@@ -1,26 +1,5 @@
-.projects-section {
-  height: 80vh;
-
-}
 
 
-.projects-container {
-    justify-content: center;
-    border-radius: 25px;
-    position: relative;
-  }
-
-
-  .project-row {
-    /* Remove the flex-row class as it's not needed when centering */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  
-  
   .next-prev {
     padding: 8px 16px;
     margin: 20px;
@@ -59,6 +38,9 @@
     background-color: var(--lightest-navy);
 }
 
+.project-row {
+  margin-top: 100px;
+}
 
 .white {
   color: #fff;
@@ -75,13 +57,12 @@
 }
 
 .padd-link {
-  padding: 18px 24px;
+  padding: 10px 14px;
 }
 
 .video-player {
   border-radius: 50px;
 }
-
 
 
 .button-proj {

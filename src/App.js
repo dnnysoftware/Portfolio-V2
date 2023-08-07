@@ -30,7 +30,7 @@ function App() {
         <section className='block-sec' id='organizations'>
           <Organizations />
         </section>
-        <section className='block-sec proj' id='projects'>
+        <section className='proj' id='projects'>
           <Projects/>
         </section>
         <section>

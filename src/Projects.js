@@ -78,24 +78,26 @@ function Projects() {
   return (
     <div className='projects-section'>
       <section className="jobs__StyledJobsSection-sc-59sdss-0" data-sr-id="2">
-        <h2 className="numbered-heading-4">Projects</h2>
+        <h2 className="block-sec numbered-heading-4">Projects</h2>
         <div className='project-row d-flex flex-row justify-content-center align-items-center text-center'>
-          <button className='button-proj next-prev' onClick={handlePreviousClick}>
-            &#8249;
-          </button>
           <div className='projects-container'>
-            <a className='button-proj padd-link' href={currentProject.githubLink} rel='noreferrer' target='_blank'>
-              {currentProject.title}
-            </a>
+            <div>
+              <button className='button-proj next-prev' onClick={handlePreviousClick}>
+                &#8249;
+              </button>
+              <a className='button-proj padd-link' href={currentProject.githubLink} rel='noreferrer' target='_blank'>
+                {currentProject.title}
+              </a>
+              <button className='button-proj next-prev' onClick={handleNextClick}>
+              &#8250;
+              </button>
+            </div>
             <div className='video-cont' key={currentProject.videoSource}>
               {currentProject.videoSource && (
                 <VideoPlayer videoSource={currentProject.videoSource} posterImage={currentProject.posterImage} />
               )}
             </div>
           </div>
-          <button className='button-proj next-prev' onClick={handleNextClick}>
-            &#8250;
-          </button>
         </div>
       </section>
     </div>
