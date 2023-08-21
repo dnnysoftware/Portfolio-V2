@@ -18,16 +18,11 @@ function Experience() {
                         <ul>
                             <li>
                                 <p>
-                                    Developed a cutting-edge Rust-based web app utilizing the Yew framework. The app polls
-                                    IoT data from the helium network through the helium SDK which collected GPS data from
-                                    our Raspberry pi 4 and displayed the location of the LoRaWAN module.
+                                Contributed to a cutting-edge Rust-based web application which displays derived GPS data from LoRaWan IoT devices transmitted through the Helium blockchain network to a MQTT server. This data is then passed into MongoDB for client use in order to track their appliances securely and with low cost.
                                 </p>    
                             </li>
                             <li>
-                                <p>Configured long polling and returns updated locations every 5 minutes 92% of the time in internet accessible areas</p>    
-                            </li>
-                            <li>
-                                <p>Technologies: Rust, Yew framework, MongoDB, React, Bootstrap, Raspberry pi 4</p>    
+                                <p>Technologies: Rust, Yew framework, MongoDB, React, Bootstrap, LoRaWan IoT</p>    
                             </li>
                         </ul>
                     </div>
@@ -40,7 +35,7 @@ function Experience() {
             content: (
                 <div>
                     <h3>
-                        <span>Full-Stack Software Engineering Intern</span>
+                        <span>Full Stack Software Engineering Intern</span>
                         <span className="company">&nbsp;@&nbsp;<a href="https://www.sandstonetechnologies.com/" className="inline-link hover-underline-animation" rel="noopener noreferrer" target="_blank">Sandstone Technologies</a></span>
                     </h3>
                     <p className="range">May 2021 - May 2022</p>
@@ -48,19 +43,16 @@ function Experience() {
                         <ul>
                             <li>
                                 <p>
-                                    Developed an in-house web app which focused on encoding and testing fiber optic
-                                    transceivers to provide a centralized and faster solution in processing such transceivers for
-                                    distribution.
+                                Contributed to an in-house web application which focused on encoding and testing fiber optic transceivers. The previous practice had data inconsistency from isolated file systems, so this provided a centralized and faster solution in processing and distribution to clients.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Processing time for encoding, testing, and printing labels for the transceivers was roughly
-                                    30% ± %5 faster
+                                Processing time for encoding, testing, and printing labels for the transceivers became roughly 30% ± %5 faster.
                                 </p>
                             </li>
                             <li>
-                                <p>Technologies: ASP.NET Core Razor Pages, xUnit, C#, JavaScript, CSS, Bootstrap, JQuery, Selenium, MongoDB, PuTTY, LibUsbDotNet</p>
+                                <p>Technologies: ASP.NET Core Razor Pages, xUnit, C#, JavaScript, CSS, Bootstrap, JQuery, Selenium, MongoDB</p>
                             </li>
                         </ul>
                     </div>
@@ -81,14 +73,12 @@ function Experience() {
                         <ul>
                             <li>
                                 <p>
-                                    Developed data aggregation side of the backend with RB Binary Tree in order to organize
-                                    Vector3 coordinates for specific hand animation models.
+                                Contributed to the data aggregation side of the backend with RB Binary Trees in order to organize Vector3 coordinates for specific hand animation models.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    This effort was for a sign language
-                                    education start-up company that was supported by NTID president Gerard J. Buckley of RIT.
+                                This effort was for a sign language education start-up company which was sponsored by NTID president Gerard J. Buckley of RIT to promote communication with deaf and hard of hearing communities.
                                 </p>
                             </li>
                             <li>
