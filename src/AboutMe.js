@@ -17,7 +17,7 @@ function AboutMe() {
                 and software engineering practices which gained me hands-on experience
                 from internships, some were at <a className="hover-underline-animation" href="https://foundrydigital.com/" rel="noopener noreferrer" target="_blank">Foundry Digital</a> and <a className="hover-underline-animation" href="https://www.sandstonetechnologies.com/" rel="noopener noreferrer" target="_blank">Sandstone Technologies</a>, 
                 both where I collaborated with teams to build web and cloud applications.
-                I enjoy taking on personal projects that challenge me to explore new technologies, my most recent is the <a className="hover-underline-animation" href="https://github.com/dnnysoftware/Rate-My-Manager" rel="noopener noreferrer" target="_blank">Rate My Manager</a> application using MERN stack.
+                Taking on personal projects that challenge me to explore new technologies is a passion of mine, my most recent is the <a className="hover-underline-animation" href="https://github.com/dnnysoftware/Rate-My-Manager" rel="noopener noreferrer" target="_blank">Rate My Manager</a> application using MERN stack.
                 I am constantly striving to stay updated with industry advancements. Let's connect and discuss how we can bring innovative ideas to life!</p>
                 <p>Here are my favorite technologies and stacks for building awesome software:</p>
               </div>
